@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
-    
+
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 
     <style>
@@ -33,7 +33,6 @@
         flex-direction: column;
         align-items: center;
         min-height: 400px;
-        text-align: center;
         padding-top: 100px;
       }
 
@@ -82,17 +81,12 @@
         border-radius: 100% 50%;
         width: 55%;
         height: 100%;
-        background-color: hsl(244, 72%, 53%);
+        background-color: #3c31dd;
         transform: translate(-4%, 40%);
         z-index: -1;
       }
 
       /* Bubble bg with plain CSS */
-
-      .bubble {
-        position: relative;
-        height: 400px;
-      }
 
       .bubble::after {
         content: '';
@@ -139,7 +133,7 @@
       }
 
       .layer1 {
-        background-image: url('./layer.svg');
+        background-image: url('./layer1.svg');
       }
       .layer2 {
         background-image: url('./layer2.svg');
@@ -151,11 +145,6 @@
 
       /* Blobs SVG background image via https://haikei.app/ */
 
-      .blobs {
-        width: 100%;
-        background: url('./blobs.svg') no-repeat bottom / cover;
-      }
-
       .blob-motion {
         position: absolute;
         transform: translateY(-20%);
@@ -164,6 +153,11 @@
 
       .blob-content {
         z-index: 1;
+      }
+
+      .blobs {
+        width: 100%;
+        background: url('./blobs.svg') no-repeat bottom / cover;
       }
     </style>
   </head>
