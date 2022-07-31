@@ -10,4 +10,5 @@ Watch the full [Wavy Blobby Backgrounds with CSS and SVG Tutorial](https://youtu
 git clone <this-repo>
 npx serve
 ```
+i change some thinf for a little practice :)
 
